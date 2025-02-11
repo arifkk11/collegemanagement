@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token  %}
+
+        <select name="depname" id="">
+            {% for i in data %}
+            <option value="{{i.id}}" name="">{{i.dep_name}}</option>
+            {% endfor %}
+
+        </select><br><br>
+
+
+        <label for="">firstname</label>
+        <input type="text" name="fname"><br><br>
+        <label for="">lastname</label>
+        <input type="text" name="lname"><br><br>
+        <label for="">email</label>
+        <input type="text" name="email"><br><br>
+        <label for="">username</label>
+        <input type="text" name="usr"><br><br>
+        <label for="">password</label>
+        <input type="text" name="pass"><br><br>
+        <label for="">age</label>
+        <input type="text" name="age"><br><br>
+        <label for="">address</label>
+        <input type="text" name="add"><br><br>
+        <label for="">qualification</label>
+        <input type="text" name="qual"><br><br>
+    
+        <input type="submit" value="add teacher">
+
+    </form>
+</body>
+</html>
