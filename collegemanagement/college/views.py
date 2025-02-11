@@ -4,7 +4,6 @@ from college.models import Department,User,Teacher,Student
 from django.contrib.auth import authenticate,login,logout
 
 
-# Create your views here.
 def adminhome(request):
     return render(request,'adminhome.html')
 
